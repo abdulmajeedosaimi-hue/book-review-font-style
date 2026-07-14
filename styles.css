@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap");
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 300 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GeistPixel";
+  src: url("GeistPixel-Regular-VariableFont_ELSH.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "GeistPixel";
+  src: url("GeistPixel-Regular-VariableFont_ELSH.ttf");
+  font-weight: 700;
+}
+
+body {
+  font-family: "GeistPixel", sans-serif;
+}
+body {
+  font-style: normal;
+}
+
+footer {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.boot-title {
+  font-family: "Geist Pixel", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 28px;
+}
+
+h2.summary-heading {
+  font-weight: 600;
+}
+
+h2.core-message-heading {
+  font-weight: 400;
+}
+
+h2.conclusion-heading {
+  font-weight: 300;
+}
+
+p.quote-text {
+  font-style: italic;
+  font-weight: 700;
+}
