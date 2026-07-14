@@ -9,21 +9,16 @@
 @font-face {
   font-family: "GeistPixel";
   src: url("GeistPixel-Regular-VariableFont_ELSH.ttf");
-  font-weight: 400;
+  font-weight: 400 700;
 }
 
-@font-face {
-  font-family: "GeistPixel";
-  src: url("GeistPixel-Regular-VariableFont_ELSH.ttf");
-  font-weight: 700;
-}
+
 
 body {
   font-family: "GeistPixel", sans-serif;
+    font-style: normal;
 }
-body {
-  font-style: normal;
-}
+
 
 footer {
   font-family: "Open Sans", sans-serif;
@@ -53,6 +48,9 @@ h2 {
 
 h2.summary-heading {
   font-weight: 600;
+}
+p {
+  font-family: "Roboto Mono", monospace;
 }
 
 h2.core-message-heading {
