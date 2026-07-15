@@ -7,9 +7,22 @@
   font-weight: 400 700;
 }
 
+:root {
+  --page-bg-color: #e6cda9;
+  --main-text-color: rgb(0, 46, 60);
+  --main-heading-color: #015a9f;
+  --section-heading-color: #15007b;
+  --quote-color: rgba(200, 18, 46, 0.8);
+  --list-color: #0984e3;
+  --footer-color: #0984e3;
+  --main-heading-font-size: 36px;
+  --section-heading-font-size: 28px;
+}
+
 body {
   font-family: "GeistPixel", sans-serif;
   font-style: normal;
+  background-color: var(--page-bg-color, #ffffff);
 }
 
 footer {
@@ -17,6 +30,7 @@ footer {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  color: var(--main-heading-color);
 }
 
 .boot-title {
@@ -25,37 +39,42 @@ footer {
   font-weight: 400;
 }
 
-h2 {
-  font-family: "Playfair Display", serif;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
-  font-size: 36px;
+  font-size: var(--main-heading-font-size, 36px);
+  color: var(--main-heading-color);
 }
 
 h2 {
   font-family: "Playfair Display", serif;
-  font-size: 28px;
+  font-size: var(--section-heading-font-size);
+  color: var(--section-heading-color);
 }
 
-h2.summary-heading {
+.summary-heading {
   font-weight: 600;
 }
+
 p {
   font-family: "Roboto Mono", monospace;
+  color: var(--main-text-color);
 }
 
-h2.core-message-heading {
+.core-message-heading {
   font-weight: 400;
 }
 
-h2.conclusion-heading {
+.conclusion-heading {
   font-weight: 300;
 }
 
-p.quote-text {
+.quote-text {
   font-style: italic;
   font-weight: 700;
+  color: var(--quote-color);
+}
+
+ul {
+  color: var(--list-color);
 }
