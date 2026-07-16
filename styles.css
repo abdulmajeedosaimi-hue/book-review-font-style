@@ -97,7 +97,7 @@ section > button {
 .card {
   --theme-color: indigo;
 }
-.card div h2,
+.card h2,
 .card button {
   color: var(--theme-color);
 }
