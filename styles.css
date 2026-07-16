@@ -8,6 +8,7 @@
 }
 
 :root {
+  --font-family: "GeistPixel", sans-serif;
   --page-bg-color: #e6cda9;
   --main-text-color: rgb(0, 46, 60);
   --main-heading-color: #015a9f;
@@ -33,12 +34,6 @@ footer {
   color: var(--main-heading-color);
 }
 
-.boot-title {
-  font-family: "Geist Pixel", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-}
-
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -51,30 +46,70 @@ h2 {
   font-size: var(--section-heading-font-size);
   color: var(--section-heading-color);
 }
-
-.summary-heading {
-  font-weight: 600;
-}
-
 p {
   font-family: "Roboto Mono", monospace;
   color: var(--main-text-color);
 }
 
-.core-message-heading {
-  font-weight: 400;
-}
-
-.conclusion-heading {
-  font-weight: 300;
-}
-
-.quote-text {
-  font-style: italic;
-  font-weight: 700;
-  color: var(--quote-color);
-}
-
 ul {
   color: var(--list-color);
+}
+.article p {
+  color: royalblue;
+}
+.article a {
+  color: tomato;
+}
+
+.article h2 {
+  color: darkgreen;
+}
+section > h2 {
+  color: royalblue;
+}
+section > p {
+  color: green;
+}
+section > button {
+  background-color: tomato;
+}
+
+.hero-for-example {
+  --theme-color: mediumvioletred;
+}
+
+.hero-for-example h2,
+.hero-for-example p,
+.hero-for-example button {
+  color: var(--theme-color);
+}
+
+.main-ideas {
+  --theme-color: teal;
+}
+
+.main-ideas h2,
+.main-ideas p,
+.main-ideas button {
+  color: var(--theme-color);
+}
+
+.card {
+  --theme-color: indigo;
+}
+.card div h2,
+.card button {
+  color: var(--theme-color);
+}
+
+.card p {
+  color: dimgray;
+}
+
+.card > p {
+  font-style: italic;
+}
+
+.card > button {
+  background-color: green;
 }
