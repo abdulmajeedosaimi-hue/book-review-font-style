@@ -125,8 +125,9 @@ a[title] {
 a[href="https://en.wikipedia.org/wiki/Who_Moved_My_Cheese"] {
   color: rgb(47, 122, 138);
 }
-
+/* dont work  */
 a[href="https://www.goodreads.com/book/show/4894.Who_Moved_My_Cheese_"] {
+  color: green;
 }
 
 a[href="https://www.amazon.com/"] {
@@ -175,7 +176,7 @@ button[disabled] {
 .resources h2 ~ p {
   color: dimgray;
 }
-
+/* this don't make good read work  */
 .resources a[title] {
   color: darkcyan;
 }
