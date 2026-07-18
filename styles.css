@@ -19,13 +19,14 @@
   --main-heading-font-size: 36px;
   --section-heading-font-size: 28px;
 }
-
+/* Specificity: 0 0 0 1 */
 body {
   font-family: "GeistPixel", sans-serif;
   font-style: normal;
   background-color: var(--page-bg-color, #ffffff);
 }
 
+/* Specificity: 0 0 0 1 */
 footer {
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -34,6 +35,7 @@ footer {
   color: var(--main-heading-color);
 }
 
+/* Specificity: 0 0 0 1 */
 h1 {
   font-family: "Playfair Display", serif;
   font-weight: 700;
@@ -41,174 +43,301 @@ h1 {
   color: var(--main-heading-color);
 }
 
+/* Specificity: 0 0 0 1 */
 h2 {
   font-family: "Playfair Display", serif;
   font-size: var(--section-heading-font-size);
   color: var(--section-heading-color);
 }
+
+/* Specificity: 0 0 0 1 */
 p {
   font-family: "Roboto Mono", monospace;
   color: var(--main-text-color);
 }
 
+/* Specificity: 0 0 0 1 */
 ul {
   color: var(--list-color);
 }
+/* Specificity: 0 0 1 1 */
 .article p {
   color: royalblue;
 }
+
+/* Specificity: 0 0 1 1 */
 .article a {
   color: tomato;
 }
 
+/* Specificity: 0 0 1 1 */
 .article h2 {
   color: darkgreen;
 }
+
+/* Specificity: 0 0 0 2 */
 section > h2 {
   color: royalblue;
 }
+
+/* Specificity: 0 0 0 2 */
 section > p {
   color: green;
 }
+
+/* Specificity: 0 0 0 2 */
 section > button {
   background-color: tomato;
 }
 
+/* Specificity: 0 0 1 0 */
 .hero-for-example {
   --theme-color: mediumvioletred;
 }
-
+/* Specificity: 0 0 1 1 */
 .hero-for-example h2,
 .hero-for-example p,
 .hero-for-example button {
   color: var(--theme-color);
 }
 
+/* Specificity: 0 0 1 0 */
 .main-ideas {
   --theme-color: teal;
 }
 
+/* Specificity: 0 0 1 1 */
 .main-ideas h2,
 .main-ideas p,
 .main-ideas button {
   color: var(--theme-color);
 }
 
+/* Specificity: 0 0 1 0 */
 .card {
   --theme-color: indigo;
 }
+
+/* Specificity: 0 0 1 1 */
 .card h2,
 .card button {
   color: var(--theme-color);
 }
 
+/* Specificity: 0 0 1 1 */
 .card p {
   color: dimgray;
 }
 
+/* Specificity: 0 0 1 1 */
 .card > p {
   font-style: italic;
 }
 
+/* Specificity: 0 0 1 1 */
 .card > button {
   background-color: green;
 }
+
 /* the home work start from here */
+
+/* Specificity: 0 0 1 1 */
 a[title] {
   font-weight: bold;
   text-decoration: none;
 }
+
+/* Specificity: 0 0 1 1 */
 a[title] {
   color: gold;
 }
 
+/* Specificity: 0 0 1 1 */
 a[href="https://en.wikipedia.org/wiki/Who_Moved_My_Cheese"] {
   color: rgb(47, 122, 138);
 }
-/* dont work  */
+
+/* dont work   0010*/
+/* Specificity: 0 0 1 1 */
 a[href="https://www.goodreads.com/book/show/4894.Who_Moved_My_Cheese_"] {
   color: green;
 }
 
+/* this don't make good read work 0020 */
+/* Specificity: 0 0 2 1 */
+.resources a[title] {
+  color: darkcyan;
+}
+
+/* Specificity: 0 0 1 1 */
 a[href="https://www.amazon.com/"] {
   color: darkorange;
 }
 
+/* Specificity: 0 0 1 1 */
 img[alt] {
   color: skyblue;
   border: 4px solid #333;
   border-radius: 8px;
 }
 
+/* Specificity: 0 0 1 1 */
 button[disabled] {
   opacity: 0.5;
   background-color: #cccccc;
   color: #666666;
 }
+
+/* Specificity: 0 0 1 1 */
 .summary-heading + p {
   color: #2c3e50;
 }
 
+/* Specificity: 0 0 1 1 */
 .core-message-heading + p {
   color: #8e44ad;
 }
 
+/* Specificity: 0 0 1 1 */
 .conclusion-heading + p {
   color: rgb(41, 128, 185);
 }
 
+/* Specificity: 0 0 1 2 */
 .card h2 + p {
   color: rgba(211, 84, 0, 0.9);
 }
 
+/* Specificity: 0 0 2 1 */
 .article .quote-text + button {
   background-color: #f39c12;
 }
 
+/* Specificity: 0 0 1 2 */
 .hero-for-example h2 ~ button {
   background-color: #27ae60;
 }
 
+/* Specificity: 0 0 1 2 */
 .main-ideas ul ~ button {
   background-color: rgb(22, 160, 133);
 }
 
+/* Specificity: 0 0 1 2 */
 .resources h2 ~ p {
   color: dimgray;
 }
-/* this don't make good read work  */
-.resources a[title] {
-  color: darkcyan;
-}
 
+/* Specificity: 0 0 2 1 */
 .resources button[disabled] {
   background-color: rgba(189, 195, 199, 0.6);
 }
 
+/* Specificity: 0 0 1 2 */
 .article h2 + p {
   background-color: gray;
 }
 
+/* Specificity: 0 0 1 2 */
 .resources p ~ button {
   opacity: 0.3;
 }
 
+/* Specificity: 0 0 2 1 */
 .resources img[alt] {
   opacity: 0.9;
 }
 
+/* Specificity: 0 0 0 2 */
 h2 + p {
   font-weight: bold;
 }
 
+/* Specificity: 0 0 1 1 */
 button[disabled] {
   border-radius: 12px;
 }
 
+/* Specificity: 0 0 1 1 */
 img[alt] {
   border: 3px solid coral;
 }
 
+/* Specificity: 0 0 1 2 */
 .article div + button {
   width: 250px;
+}
+
+.title.section-title {
+  color: blue;
+  font-size: 10px;
+}
+
+p.text {
+  color: #27ae60;
+  line-height: 20px;
+}
+.text.important {
+  color: pink;
+  font-weight: 900px;
+}
+.text.featured {
+  font-style: italic;
+  background-color: rgb(98, 18, 25);
+}
+button.btn {
+  color: rgb(91, 125, 98);
+  background-color: rgb(98, 18, 25);
+}
+.btn.primary {
+  background-color: greenyellow;
+}
+.btn.secondary {
+  background-color: orange;
+}
+.blog {
+  color: gray;
+  font-family: "Courier New", Courier, monospace;
+  line-height: 80px;
+}
+a {
+  color: inherit;
+}
+button:hover {
+  color: darkgreen;
+  background-color: #15007b;
+}
+button:active {
+  color: lightskyblue;
+}
+a:hover {
+  color: #7a0a5c;
+  text-decoration: underline;
+}
+a:visited {
+  color: goldenrod;
+}
+
+button:not(.btn.primary) {
+  background-color: #78b82f;
+  color: #1f0000;
+}
+.services li:first-child {
+  color: darkgreen;
+}
+
+.services li:last-child {
+  color: crimson;
+}
+
+.services li:nth-child(3) {
+  font-weight: bold;
+}
+
+.services li:nth-child(odd) {
+  background-color: lightgray;
+}
+
+.services li:nth-child(even) {
+  background-color: lightblue;
 }
