@@ -267,77 +267,90 @@ img[alt] {
 .article div + button {
   width: 250px;
 }
-
+/* Specificity: 0 0 2 0 */
 .title.section-title {
   color: blue;
   font-size: 10px;
 }
-
+/* Specificity: 0 0 1 1 */
 p.text {
   color: #27ae60;
   line-height: 20px;
 }
+/* Specificity: 0 0 2 0 */
 .text.important {
   color: pink;
   font-weight: 900px;
 }
+/* Specificity: 0 0 2 0 */
 .text.featured {
   font-style: italic;
   background-color: rgb(98, 18, 25);
 }
+/* Specificity: 0 0 2 0 */
 button.btn {
   color: rgb(91, 125, 98);
   background-color: rgb(98, 18, 25);
 }
+/* Specificity: 0 0 2 0 */
 .btn.primary {
   background-color: greenyellow;
 }
+/* Specificity: 0 0 2 0 */
 .btn.secondary {
   background-color: orange;
 }
+/* Specificity: 0 0 0 1 */
 .blog {
   color: gray;
   font-family: "Courier New", Courier, monospace;
   line-height: 80px;
 }
+
+/* Specificity: 0 0 0 1 */
 a {
   color: inherit;
 }
+/* Specificity: 0 0 1 1 */
 button:hover {
   color: darkgreen;
   background-color: #15007b;
 }
+/* Specificity: 0 0 1 1 */
 button:active {
   color: lightskyblue;
 }
+/* Specificity: 0 0 1 1 */
 a:hover {
   color: #7a0a5c;
   text-decoration: underline;
 }
+/* Specificity: 0 0 1 1 */
 a:visited {
   color: goldenrod;
 }
-
+/* Specificity: 0 0 2 1 */
 button:not(.btn.primary) {
   background-color: #78b82f;
   color: #1f0000;
 }
+/* Specificity: 0 0 2 1 */
 .services li:first-child {
   color: darkgreen;
 }
-
+/* Specificity: 0 0 2 1 */
 .services li:last-child {
   color: crimson;
 }
-
+/* Specificity: 0 0 2 1 */
 .services li:nth-child(3) {
   font-weight: bold;
 }
-
+/* Specificity: 0 0 2 1 */
 .services li:nth-child(odd) {
   background-color: lightgray;
 }
-
+/* Specificity: 0 0 2 1 */
 .services li:nth-child(even) {
   background-color: lightblue;
 }
