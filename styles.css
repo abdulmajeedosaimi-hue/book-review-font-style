@@ -354,3 +354,118 @@ button:not(.btn.primary) {
 .services li:nth-child(even) {
   background-color: lightblue;
 }
+
+/* Specificity: 0 0 1 1 */
+.summary-heading::before {
+  content: "📖 ";
+}
+
+/* Specificity: 0 0 1 1 */
+.core-message-heading::before {
+  content: "💡 ";
+}
+
+/* Specificity: 0 0 1 1 */
+.conclusion-heading::before {
+  content: "⭐ ";
+}
+
+/* Specificity: 0 0 1 2 */
+.resources a::after {
+  content: " →";
+}
+
+/* Specificity: 0 0 1 2 */
+.article h2::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: royalblue;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Specificity: 0 0 1 2 */
+.article h2::after {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 3px;
+  background-color: royalblue;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+/* Specificity: 0 0 1 2 */
+.article p::first-letter {
+  font-size: 1.5em;
+  color: crimson;
+  font-weight: bold;
+}
+
+/* Specificity: 0 0 1 2 */
+.article p::first-line {
+  font-weight: bold;
+  color: darkslateblue;
+}
+
+/* Specificity: 0 0 0 1 */
+::selection {
+  background-color: gold;
+  color: #111;
+}
+
+/* Specificity: 0 0 0 1 */
+h1 {
+  color: var(--main-heading-color);
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.3),
+    4px 4px 10px rgba(1, 90, 159, 0.5);
+}
+
+/* Specificity: 0 0 1 0 */
+.quote-text {
+  white-space: pre-wrap;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-left: 4px solid var(--quote-color);
+}
+
+/* Specificity: 0 0 1 1 */
+.quote-text::before {
+  content: "“ ";
+  color: var(--quote-color);
+  font-weight: bold;
+}
+
+/* Specificity: 0 0 1 1 */
+.quote-text::after {
+  content: " ”";
+  color: var(--quote-color);
+  font-weight: bold;
+}
+
+/* Specificity: 0 0 1 1 */
+.quote-text::first-letter {
+  font-size: 1.8em;
+  color: var(--quote-color);
+  font-weight: bold;
+}
+
+/* Specificity: 0 0 1 1 */
+.btn::before {
+  content: "🚀 ";
+}
+
+/* Specificity: 0 0 1 1 */
+.btn::after {
+  content: " →";
+}
+
+/* Specificity: 0 0 1 2 */
+.services li::before {
+  content: "✅ ";
+  margin-right: 8px;
+}
